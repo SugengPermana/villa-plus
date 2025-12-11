@@ -33,7 +33,7 @@ export default function Home() {
               </a>
             ))}
             <Button href="#hubungi" variant="ghost">
-              Hubungi kami
+              Hubungi kami iya
             </Button>
           </nav>
         </div>
