@@ -31,14 +31,11 @@ export function Hero() {
           <div className="inline-flex w-fit items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] backdrop-blur">
             VillaPlus • Curated villa stays
           </div>
-          <h1 className="text-balance text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
-            VillaPlus menghadirkan villa modern di lokasi terbaik untuk stay
-            yang tenang dan berkelas.
+          <h1 className="text-balance text-5xl font-semibold leading-tight sm:text-6xl lg:text-7xl">
+            VillaPlus
           </h1>
-          <p className="max-w-2xl text-pretty text-lg text-slate-100/90 sm:text-xl">
-            Dari tepi pantai hingga pemandangan pegunungan, setiap properti
-            dipilih untuk pengalaman menginap yang effortless, privat, dan siap
-            diservis sesuai kebutuhanmu.
+          <p className="max-w-3xl text-pretty text-lg text-slate-100/90 sm:text-xl lg:text-2xl">
+            Slogan: modern villas curated for unforgettable stays — effortless, privat, dan siap menyambut.
           </p>
           <div className="flex flex-wrap items-center gap-3">
             <Button href="#koleksi">Jelajahi Koleksi</Button>

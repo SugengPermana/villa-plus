@@ -23,7 +23,7 @@ const highlights = [
 
 export function Highlights() {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-16 sm:px-10 sm:py-20">
+    <section id="tentang" className="mx-auto max-w-6xl px-6 py-16 sm:px-10 sm:py-20">
       <div className="surface-card flex flex-col gap-10 p-8 sm:p-10">
         <SectionHeader
           eyebrow="Kenapa VillaPlus"
@@ -44,5 +44,6 @@ export function Highlights() {
     </section>
   );
 }
+
 
 
