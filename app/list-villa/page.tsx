@@ -95,7 +95,7 @@ export default function ListVilla() {
             description="Tiap properti memiliki style unik, namun dengan standar kenyamanan yang sama: privat, bersih, dan siap pakai."
             align="left"
           />
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
             {villas.map((villa) => (
               <article
                 key={villa.name}
@@ -106,7 +106,7 @@ export default function ListVilla() {
                     src={villa.image}
                     alt={villa.name}
                     fill
-                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                    sizes="(min-width: 1024px) 50vw, (min-width: 640px) 50vw, 100vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-linear-to-b from-black/50 via-transparent to-transparent" />
