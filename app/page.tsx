@@ -19,7 +19,7 @@ export default function Home() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 sm:px-10">
           <div className="flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/85 text-sm font-semibold text-slate-900 shadow-lg shadow-black/15 backdrop-blur">
-              VP
+              VPaksdasdjiqw
             </div>
             <div>
               <p className="text-sm font-semibold text-white drop-shadow">VillaPlus</p>
