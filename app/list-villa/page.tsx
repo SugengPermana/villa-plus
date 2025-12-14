@@ -34,6 +34,7 @@ export default function ListVilla() {
                 className="group surface-card flex flex-col overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
               >
                 <div className="relative h-64 w-full overflow-hidden">
+                  {villa.images?.[0] && (
                   <Image
                     src={villa.images[0]}
                     alt={villa.name}
@@ -41,6 +42,7 @@ export default function ListVilla() {
                     sizes="(min-width: 1024px) 50vw, (min-width: 640px) 50vw, 100vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
+                  )}
                   <div className="absolute inset-0 bg-linear-to-b from-black/50 via-transparent to-transparent" />
                   {villa.bestSeller ? (
                     <div className="absolute right-4 top-4 rounded-full bg-amber-400 px-3 py-1 text-xs font-semibold text-amber-900 shadow-lg">
