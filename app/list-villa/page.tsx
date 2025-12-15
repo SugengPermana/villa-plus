@@ -60,6 +60,7 @@ export default function ListVilla() {
                       </div>
                     ))}
                   </div>
+                  <hr />
 
                   <div className="mt-auto flex items-center justify-between">
                     <span className="font-bold">
@@ -68,11 +69,12 @@ export default function ListVilla() {
 
                     <Link
                       href={`/villa/${villa.slug}`}
-                      className="text-sm font-semibold text-sky-700 hover:underline"
+                      className="inline-flex items-center justify-center rounded-lg border-2 border-sky-700 px-4 py-2 text-sm font-semibold text-sky-700 transition-all hover:bg-sky-700 hover:text-white"
                     >
                       Selengkapnya →
                     </Link>
                   </div>
+                  <hr />
                 </div>
               </article>
             ))}
