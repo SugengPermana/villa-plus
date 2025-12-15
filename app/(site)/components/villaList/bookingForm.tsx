@@ -1,39 +1,59 @@
 "use client";
-import { Villa } from "@/types/villa";
+import { useState } from "react";
 import { formatPrice } from "@/utils/formatPrice";
-import Link from "next/link";
 
-export const BookingForm = ({ villa }: { villa: Villa }) => {
+export const BookingForm = ({ villa }: any) => {
+  const [date, setDate] = useState("");
+  const [guest, setGuest] = useState(1);
+
+  const waText = encodeURIComponent(
+    `Halo, saya ingin booking ${villa.name}
+Tanggal: ${date}
+Jumlah tamu: ${guest} orang`
+  );
+
   return (
-    <div className="space-y-4 rounded-xl border p-4">
-      <div>
-        <p className="font-semibold">List harga:</p>
-        <ul className="text-sm">
-          <li>{formatPrice(villa.prices.weekday)} (Minggu–Kamis)</li>
-          <li>{formatPrice(villa.prices.friday)} (Jumat)</li>
-          <li>{formatPrice(villa.prices.weekend)} (Sabtu & Libur)</li>
-        </ul>
+    <div className="rounded-xl border p-6 space-y-4 shadow-sm">
+      <h3 className="text-xl font-bold">{villa.name}</h3>
+
+      <div className="text-sm space-y-1">
+        <p>{formatPrice(villa.prices.weekday)} | Minggu sd Kamis</p>
+        <p>{formatPrice(villa.prices.friday)} | Jumat</p>
+        <p>{formatPrice(villa.prices.weekend)} | Sabtu & Libur</p>
       </div>
 
-      <input placeholder="Tanggal CheckIn" type="date" className="w-full rounded-md border px-3 py-2" />
+      <div>
+        <label className="text-sm">Tanggal check-in:</label>
+        <input
+          placeholder="date"
+          type="date"
+          className="w-full border rounded-lg px-3 py-2"
+          onChange={(e) => setDate(e.target.value)}
+        />
+      </div>
 
-      <label htmlFor="guests" className="block text-sm font-medium">Jumlah Tamu</label>
-      <select id="guests" className="w-full rounded-md border px-3 py-2">
-        {[...Array(villa.maxGuests)].map((_, i) => (
-          <option key={i}>{i + 1} orang</option>
-        ))}
-      </select>
+      <div>
+        <label className="text-sm">Jumlah tamu:</label>
+        <input
+          placeholder="number"
+          type="number"
+          max={villa.maxGuests}
+          min={1}
+          className="w-full border rounded-lg px-3 py-2"
+          onChange={(e) => setGuest(+e.target.value)}
+        />
+        <p className="text-xs text-slate-500">Max {villa.maxGuests} orang</p>
+      </div>
 
-      <Link
-        href={`https://wa.me/6281234567890?text=Booking ${villa.name}`}
+      <a
+        href={`https://wa.me/628XXXXXXXXXX?text=${waText}`}
         target="_blank"
-        className="block rounded-lg bg-green-500 py-3 text-center font-bold text-white"
+        className="block text-center bg-green-600 text-white rounded-lg py-3 font-bold"
       >
         BOOK NOW
-      </Link>
+      </a>
     </div>
   );
-}
+};
 
 export default BookingForm;
-

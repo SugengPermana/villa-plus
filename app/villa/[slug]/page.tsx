@@ -1,6 +1,6 @@
 // file ini nyambung dengan list-villa
 import { villas } from "@/data/villas";
-import { BookingForm } from "@/app/(site)/components/villaList/bookingForm";
+import BookingForm from "@/app/(site)/components/villaList/bookingForm";
 import VillaCarousel from "@/app/(site)/components/villaList/villaCarousel";
 
 
