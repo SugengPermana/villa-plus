@@ -1,6 +1,7 @@
 "use client";
 import { Villa } from "@/types/villa";
 import { formatPrice } from "@/utils/formatPrice";
+import Link from "next/link";
 
 export function BookingForm({ villa }: { villa: Villa }) {
   return (
@@ -22,13 +23,13 @@ export function BookingForm({ villa }: { villa: Villa }) {
         ))}
       </select>
 
-      <a
+      <Link
         href={`https://wa.me/6281234567890?text=Booking ${villa.name}`}
         target="_blank"
         className="block rounded-lg bg-green-500 py-3 text-center font-bold text-white"
       >
         BOOK NOW
-      </a>
+      </Link>
     </div>
   );
 }

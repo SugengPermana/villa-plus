@@ -1,5 +1,6 @@
 // src/types/villa.ts
 export type Villa = {
+  slug: string;
   name: string;
   location: string;
   price: number;

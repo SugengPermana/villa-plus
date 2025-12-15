@@ -3,6 +3,7 @@ import { Villa } from "@/types/villa";
 
 export const villas: Villa[] = [
   {
+    slug: "villa-tirtha",
     name: "Villa Tirtha",
     location: "Canggu, Bali",
     price: 8500000,
@@ -27,6 +28,7 @@ export const villas: Villa[] = [
     bestSeller: true,
   },
   {
+    slug: "awan-heights",
     name: "Awan Heights",
     location: "Ubud, Bali",
     price: 6200000,
@@ -50,6 +52,7 @@ export const villas: Villa[] = [
     maxGuests: 25,    
   },
   {
+    slug: "lembah-azure",
     name: "Lembah Azure",
     location: "Bandung, Jawa Barat",
     price: 5100000,
@@ -73,6 +76,7 @@ export const villas: Villa[] = [
     maxGuests: 25,
   },
   {
+    slug: "villa-serenity",
     name: "Villa Serenity",
     location: "Lombok, Nusa Tenggara Barat",
     price: 7800000,
@@ -88,6 +92,7 @@ export const villas: Villa[] = [
     maxGuests: 25,
   },
   {
+    slug: "mountain-view-villa",
     name: "Mountain View Villa",
     location: "Labuan Bajo, NTT",
     price: 9200000,
@@ -104,6 +109,7 @@ export const villas: Villa[] = [
     bestSeller: true,
   },
   {
+    slug: "villa-sunset",
     name: "Villa Sunset",
     location: "Seminyak, Bali",
     price: 6500000,
