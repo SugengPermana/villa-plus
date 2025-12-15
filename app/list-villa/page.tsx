@@ -8,7 +8,7 @@ import { Footer } from "../(site)/sections/footer";
 import { SectionHeader } from "../(site)/components/section-header";
 import { villas } from "@/data/villas";
 import type { Villa } from "@/types/villa";
-import VillaDetailModal from "../(site)/components/villa-detail";
+import VillaDetailModal from "../(site)/components/villaList/villa-detail";
 
 const navigation = [
   { href: "/home", label: "Home" },
@@ -87,7 +87,7 @@ export default function ListVilla() {
           </div>
         </section>
       </main>
-      
+
       <Footer />
 
       <VillaDetailModal

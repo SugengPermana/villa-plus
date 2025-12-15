@@ -18,6 +18,12 @@ export const villas: Villa[] = [
       "Dapur lengkap",
       "Parkir gratis",
     ],
+    prices: {
+      weekday: 1000000,
+      friday: 1800000,
+      weekend: 2800000,
+    },
+    maxGuests: 25,
     bestSeller: true,
   },
   {
@@ -36,7 +42,12 @@ export const villas: Villa[] = [
       "Dapur lengkap",
       "Parkir gratis",
     ],
-      
+    prices: {
+      weekday: 1000000,
+      friday: 1800000,
+      weekend: 2800000,
+    },
+    maxGuests: 25,    
   },
   {
     name: "Lembah Azure",
@@ -54,6 +65,12 @@ export const villas: Villa[] = [
       "Dapur lengkap",
       "Parkir gratis",
     ],
+    prices: {
+      weekday: 1000000,
+      friday: 1800000,
+      weekend: 2800000,
+    },
+    maxGuests: 25,
   },
   {
     name: "Villa Serenity",
@@ -63,6 +80,12 @@ export const villas: Villa[] = [
       "/villas/serenity-1.webp"
     ],
     amenities: ["Kapasitas 10 tamu", "5 kamar tidur", "Private beach"],
+    prices: {
+      weekday: 1000000,
+      friday: 1800000,
+      weekend: 2800000,
+    },
+    maxGuests: 25,
   },
   {
     name: "Mountain View Villa",
@@ -72,6 +95,12 @@ export const villas: Villa[] = [
     "/villas/gambar-2.avif" 
     ],
     amenities: ["Kapasitas 12 tamu", "6 kamar tidur", "Infinity pool"],
+    prices: {
+      weekday: 1000000,
+      friday: 1800000,
+      weekend: 2800000,
+    },
+    maxGuests: 25,
     bestSeller: true,
   },
   {
@@ -82,5 +111,11 @@ export const villas: Villa[] = [
       "/villas/gambar-6.avif"
     ],
     amenities: ["Kapasitas 8 tamu", "4 kamar tidur", "Rooftop terrace"],
+    prices: {
+      weekday: 1000000,
+      friday: 1800000,
+      weekend: 2800000,
+    },
+    maxGuests: 25,
   },
 ];
