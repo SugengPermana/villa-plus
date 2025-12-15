@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 
-export function ImageCarousel({ images }: { images: string[] }) {
+export const VillaCarousel = ({ images }: { images: string[] })  => {
   return (
     <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory">
       {images.map((img, i) => (
@@ -12,3 +12,5 @@ export function ImageCarousel({ images }: { images: string[] }) {
     </div>
   );
 }
+
+export default VillaCarousel
