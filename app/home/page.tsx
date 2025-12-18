@@ -1,4 +1,4 @@
- "use client";
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -6,7 +6,7 @@ import { Footer } from "../(site)/sections/footer";
 import { Navbar } from "../(site)/components/navbar";
 import { useState } from "react";
 
-const heroVideo =
+const heroGambar =
   "https://cdn.coverr.co/videos/coverr-modern-house-1519/1080p.mp4";
 const heroFallback =
   "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80";
@@ -46,7 +46,7 @@ export default function HomeModern() {
     <div className="min-h-screen bg-slate-950 text-white">
       <Navbar navigation={navigation} ctaHref="/kontak" />
 
-      <main className="pt-20">
+      <main className="pt-19">
         <section
           id="home"
           className="relative isolate min-h-[70vh] overflow-hidden bg-slate-900"
@@ -54,14 +54,8 @@ export default function HomeModern() {
         >
           <video
             className="absolute inset-0 h-full w-full object-cover"
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            poster={heroFallback}
           >
-            <source src={heroVideo} type="video/mp4" />
+            <source src={heroGambar} type="png/mp3" />
           </video>
         <div className="absolute inset-0 bg-black/60" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_20%,rgba(56,189,248,0.28),transparent_28%)]" />
@@ -102,7 +96,7 @@ export default function HomeModern() {
 
       <div
         id="best-villa"
-        className="mx-auto flex max-w-6xl items-center justify-center gap-4 px-6 py-8 text-center"
+        className="mx-auto flex max-w-6xl items-center justify-center gap-4 px-6 py-8 text-center mt-10"
       >
         <div className="h-px w-24 bg-white/20 sm:w-40" />
         <span className="text-sm font-semibold uppercase tracking-[0.22em] text-slate-200">
@@ -141,9 +135,10 @@ export default function HomeModern() {
           ))}
         </div>
       </section>
-        <Footer />
       </main>
+      <Footer />
     </div>
+    
   );
 }
 
