@@ -19,8 +19,9 @@ export default function VillaDetailPage({ params }: Props) {
   const { slug } = params;
 
   const villa = villas.find(
-    v => v.slug.toLowerCase() === slug.toLowerCase()
+    v => v.slug?.toLowerCase() === slug?.toLowerCase()
   );
+
 
   if (!villa) {
     return <div className="p-10">Villa tidak ditemukan</div>;
