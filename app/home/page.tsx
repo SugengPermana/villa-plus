@@ -105,7 +105,7 @@ export default function HomePage() {
         <div className="mx-auto mt-12 flex max-w-6xl items-center justify-center gap-4 px-6">
           <div className="h-px w-24 bg-white/20 sm:w-40" />
           <span className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-300">
-            Best Villa
+            Best Villa In Indonesia
           </span>
           <div className="h-px w-24 bg-white/20 sm:w-40" />
         </div>
