@@ -43,6 +43,14 @@ const villas: Villa[] = [
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80&sat=-20",
     amenities: ["Kapasitas 6 tamu", "3 kamar tidur", "Smart home"],
   },
+  {
+    name: "Lembah Azure",
+    location: "Bandung, Jawa Barat",
+    price: 5100000,
+    image:
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80&sat=-20",
+    amenities: ["Kapasitas 6 tamu", "3 kamar tidur", "Smart home"],
+  },
 ];
 
 export function Villas() {

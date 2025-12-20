@@ -57,7 +57,7 @@ export function Hero() {
           <div className="flex flex-col gap-4 text-white">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-xs uppercase tracking-[0.22em] text-slate-100/70">
+                <p className="text-xs uppercase tracking-[0.22em] text-black">
                   VillaPlus
                 </p>
                 <p className="text-lg font-semibold">Privat, modern, dan effortless</p>
@@ -66,15 +66,15 @@ export function Hero() {
                 New season
               </span>
             </div>
-            <p className="text-sm leading-relaxed text-slate-100/80">
+            <p className="text-sm leading-relaxed text-black font-semibold">
               Tim concierge kami siap menyiapkan itinerary lokal, private chef, hingga
               airport transfer. Semua terintegrasi dalam satu reservasi mudah lewat VillaPlus.
             </p>
             <div className="grid grid-cols-2 gap-3 text-sm">
-              <div className="rounded-xl bg-white/10 p-3">Early check-in & late check-out</div>
-              <div className="rounded-xl bg-white/10 p-3">Home tech & smart lock</div>
-              <div className="rounded-xl bg-white/10 p-3">Wellness & spa on demand</div>
-              <div className="rounded-xl bg-white/10 p-3">Dedicated concierge</div>
+              <div className="rounded-xl text-black p-3">Early check-in & late check-out</div>
+              <div className="rounded-xl text-black p-3">Home tech & smart lock</div>
+              <div className="rounded-xl text-black p-3">Wellness & spa on demand</div>
+              <div className="rounded-xl text-black p-3">Dedicated concierge</div>
             </div>
           </div>
           <div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-white/10" />
