@@ -3,13 +3,7 @@
 import { Navbar } from "../(site)/components/navbar";
 import { Footer } from "../(site)/sections/footer";
 import { CallToAction } from "../(site)/sections/cta";
-
-const navigation = [
-  { href: "/home", label: "Home" },
-  { href: "/tentang", label: "Tentang" },
-  { href: "/list-villa", label: "List villa" },
-  { href: "/kontak", label: "Kontak" },
-];
+import navigation from "@/config/navigation";
 
 export default function Kontak() {
   return (

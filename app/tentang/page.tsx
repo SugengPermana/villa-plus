@@ -5,13 +5,7 @@ import { Footer } from "../(site)/sections/footer";
 import { Highlights } from "../(site)/sections/highlights";
 import { Experiences } from "../(site)/sections/experiences";
 import { Deals } from "../(site)/sections/deals";
-
-const navigation = [
-  { href: "/home", label: "Home" },
-  { href: "/tentang", label: "Tentang" },
-  { href: "/list-villa", label: "List villa" },
-  { href: "/kontak", label: "Kontak" },
-];
+import navigation from "@/config/navigation";
 
 export default function Tentang() {
   return (

@@ -7,13 +7,7 @@ import { villas } from "@/data/villas";
 import { Navbar } from "../(site)/components/navbar";
 import { Footer } from "../(site)/sections/footer";
 import { SectionHeader } from "../(site)/components/section-header";
-
-const navigation = [
-  { href: "/home", label: "Home" },
-  { href: "/tentang", label: "Tentang" },
-  { href: "/list-villa", label: "List villa" },
-  { href: "/kontak", label: "Kontak" },
-];
+import navigation from "@/config/navigation";
 
 export default function ListVilla() {
   return (
@@ -26,7 +20,7 @@ export default function ListVilla() {
             eyebrow="Koleksi lengkap"
             title="Semua villa modern siap disambut"
             description="Tiap properti memiliki style unik, namun dengan standar kenyamanan yang sama."
-            align="left"
+            align="center"
           />
 
           <div className="mt-10 grid gap-6 sm:grid-cols-2">

@@ -3,6 +3,7 @@ import { villas } from "@/data/villas";
 import BookingForm from "@/app/(site)/components/villaList/bookingForm";
 import VillaCarousel from "@/app/(site)/components/villaList/villaCarousel";
 
+
 export async function generateStaticParams() {
   return villas.map(villa => ({
     slug: villa.slug,
@@ -10,18 +11,15 @@ export async function generateStaticParams() {
 }
 
 type Props = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
-export default function VillaDetailPage({ params }: Props) {
-  const { slug } = params;
+export default async function VillaDetailPage({ params }: Props) {
+  const { slug } = await params;
 
-  const villa = villas.find(
-    v => v.slug?.toLowerCase() === slug?.toLowerCase()
-  );
-
+  const villa = villas.find(v => v.slug === slug);
 
   if (!villa) {
     return <div className="p-10">Villa tidak ditemukan</div>;

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Navbar } from "../(site)/components/navbar";
 import { Footer } from "../(site)/sections/footer";
+import navigation from "@/config/navigation";
 
 /* 
   HERO VIDEO
@@ -35,17 +36,10 @@ const VILLAS = [
   },
 ];
 
-const NAVIGATION = [
-  { href: "/home", label: "Home" },
-  { href: "/tentang", label: "Tentang" },
-  { href: "/list-villa", label: "List Villa" },
-  { href: "/kontak", label: "Kontak" },
-];
-
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
-      <Navbar navigation={NAVIGATION} ctaHref="/kontak" />
+      <Navbar navigation={navigation} ctaHref="/kontak" />
 
       <main className="pt-20">
         {/* ======================
@@ -129,7 +123,7 @@ export default function HomePage() {
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+                  <div className="absolute inset-0 from-black/70 via-black/30 to-transparent" />
 
                   <div className="absolute bottom-4 left-4">
                     <h3 className="text-lg font-semibold">{villa.name}</h3>
