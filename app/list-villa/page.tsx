@@ -64,7 +64,7 @@ export default function ListVilla() {
 
                   <div className="mt-auto flex items-center justify-between">
                     <span className="font-bold">
-                      {formatPrice(villa.price)} / malam
+                      {formatPrice(villa.price)} / Malam
                     </span>
 
                     <Link
