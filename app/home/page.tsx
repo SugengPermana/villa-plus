@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Navbar } from "../(site)/components/navbar";
 import { Footer } from "../(site)/sections/footer";
 import navigation from "@/config/navigation";
+import Beranda from "../(site)/components/beranda";
 
 /* 
   HERO VIDEO
@@ -40,6 +41,8 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
       <Navbar navigation={navigation} ctaHref="/kontak" />
+
+      <Beranda />
 
       <main className="pt-20">
         {/* ======================
