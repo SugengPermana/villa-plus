@@ -8,6 +8,7 @@ import { Navbar } from "../(site)/components/navbar";
 import { Footer } from "../(site)/sections/footer";
 import { SectionHeader } from "../(site)/components/section-header";
 import navigation from "@/config/navigation";
+import Beranda from "../(site)/components/beranda";
 
 export default function ListVilla() {
   return (
@@ -16,6 +17,7 @@ export default function ListVilla() {
 
       <main className="flex-1 pt-20">
         <section className="mx-auto max-w-6xl px-6 py-12 sm:px-10">
+          <Beranda />
           <SectionHeader
             eyebrow="Koleksi lengkap"
             title="Semua villa modern siap disambut"

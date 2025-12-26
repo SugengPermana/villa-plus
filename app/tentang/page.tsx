@@ -6,6 +6,7 @@ import { Highlights } from "../(site)/sections/highlights";
 import { Experiences } from "../(site)/sections/experiences";
 import { Deals } from "../(site)/sections/deals";
 import navigation from "@/config/navigation";
+import Beranda from "../(site)/components/beranda";
 
 export default function Tentang() {
   return (
@@ -13,6 +14,9 @@ export default function Tentang() {
       <Navbar navigation={navigation} ctaHref="/kontak" />
 
       <main className="flex-1 pt-20">
+        <div className="mx-auto max-w-6xl px-6 sm:px-10">
+          <Beranda />
+        </div>
         <Highlights />
         <Experiences />
         <Deals />

@@ -12,7 +12,7 @@ const stats = [
 
 export function Hero() {
   return (
-    <section className="relative isolate overflow-hidden">
+    <section className="relative isolate overflow-hidden min-h-[calc(100vh-5rem)]">
       <div className="absolute inset-0">
         <Image
           src={heroImage}

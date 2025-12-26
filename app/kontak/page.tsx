@@ -4,6 +4,7 @@ import { Navbar } from "../(site)/components/navbar";
 import { Footer } from "../(site)/sections/footer";
 import { CallToAction } from "../(site)/sections/cta";
 import navigation from "@/config/navigation";
+import Beranda from "../(site)/components/beranda";
 
 export default function Kontak() {
   return (
@@ -11,6 +12,9 @@ export default function Kontak() {
       <Navbar navigation={navigation} ctaHref="/kontak" />
 
       <main className="flex-1 pt-20">
+        <div className="mx-auto max-w-6xl px-6 sm:px-10">
+          <Beranda />
+        </div>
         <CallToAction />
       </main>
 

@@ -24,6 +24,7 @@ const VILLAS = [
     name: "Villa Tirtha",
     image: "/villas/gambar-3.avif",
     href: "/list-villa",
+    bestSeller: true,
   },
   {
     name: "Awan Heights",
@@ -49,7 +50,7 @@ export default function HomePage() {
             HERO VIDEO HEADER
         ====================== */}
         <section
-          className="relative isolate w-full h-screen bg-slate-900"
+          className="relative isolate w-full h-[calc(100vh-5rem)] bg-slate-900"
           style={{
             backgroundImage: `url(${HERO_FALLBACK})`,
             backgroundSize: "cover",
@@ -127,6 +128,14 @@ export default function HomePage() {
                   />
 
                   <div className="absolute inset-0 from-black/70 via-black/30 to-transparent" />
+
+                  {/* Best Villa Badge */}
+                  {/* @ts-ignore */}
+                  {villa.bestSeller && (
+                    <div className="absolute top-4 left-4 z-20 rounded-full bg-gradient-to-r from-amber-200 to-amber-500 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-amber-950 shadow-lg shadow-amber-900/20 ring-1 ring-amber-400/50">
+                      Best Villa
+                    </div>
+                  )}
 
                   <div className="absolute bottom-4 left-4">
                     <h3 className="text-lg font-semibold">{villa.name}</h3>
